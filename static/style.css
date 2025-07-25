@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 30px;
+  animation: pulse 2s infinite;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 25px;
+  background: #ffffff;
+  color: #185a9d;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+input, select {
+  padding: 12px 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #185a9d;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  min-width: 200px;
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #185a9d;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

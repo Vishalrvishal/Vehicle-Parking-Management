@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Admin Dashboard</h1>
+        <div class="dashboard-cards">
+            <div class="card"><h3>Total Vehicles</h3><p>{{ total }}</p></div>
+            <div class="card"><h3>Currently Parked</h3><p>{{ current }}</p></div>
+            <div class="card"><h3>Total Revenue</h3><p>₹{{ revenue }}</p></div>
+        </div>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
